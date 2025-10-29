@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "sofia-contreras",
+    "name": "Sof\u00eda Contreras",
+    "bio": "Artista con enfoque en \u00f3leo figurativo y paleta c\u00e1lida. Explora memoria y territorio.",
+    "cover": "/og-default.png",
+    "works": [
+      {
+        "id": "1",
+        "title": "Ventana al Barrio",
+        "technique": "\u00d3leo sobre tela",
+        "size": "50x70 cm",
+        "price": 220000,
+        "image": "/og-default.png"
+      },
+      {
+        "id": "2",
+        "title": "Flores de Invierno",
+        "technique": "\u00d3leo sobre tela",
+        "size": "40x60 cm",
+        "price": 180000,
+        "image": "/og-default.png"
+      }
+    ]
+  },
+  {
+    "slug": "martin-rojas",
+    "name": "Mart\u00edn Rojas",
+    "bio": "Explora color y gesto con composiciones abstractas. Serie \u2018Ritmos Urbanos\u2019.",
+    "cover": "/og-default.png",
+    "works": [
+      {
+        "id": "3",
+        "title": "Ritmo I",
+        "technique": "\u00d3leo sobre tela",
+        "size": "60x80 cm",
+        "price": 260000,
+        "image": "/og-default.png"
+      }
+    ]
+  }
+]

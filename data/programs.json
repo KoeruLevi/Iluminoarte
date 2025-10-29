@@ -1,0 +1,22 @@
+[
+  {
+    "id": "taller-pintura",
+    "title": "Taller de Pintura Inclusiva",
+    "description": "Formaci\u00f3n continua en t\u00e9cnica al \u00f3leo y procesos creativos con acompa\u00f1amiento especializado.",
+    "bullets": [
+      "Grupos reducidos y apoyos personalizados",
+      "Materiales y acompa\u00f1amiento de monitores",
+      "Muestras y exhibiciones peri\u00f3dicas"
+    ]
+  },
+  {
+    "id": "formacion-monitores",
+    "title": "Formaci\u00f3n de Monitores Art\u00edsticos",
+    "description": "Capacitaci\u00f3n para facilitar procesos art\u00edsticos inclusivos en instituciones y empresas.",
+    "bullets": [
+      "Metodolog\u00edas inclusivas y accesibilidad",
+      "Pr\u00e1cticas supervisadas",
+      "Certificado de participaci\u00f3n"
+    ]
+  }
+]
