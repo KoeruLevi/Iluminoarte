@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-white/80 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
@@ -8,6 +13,7 @@ export default function Header() {
           <img src="/logo.svg" alt="Logo" className="h-7 w-7" />
           <span>Fundación de Arte Inclusivo</span>
         </Link>
+
         <nav className="hidden md:flex items-center gap-6 text-sm">
           <Link href="/programas" className="hover:text-brand-700">Programas</Link>
           <Link href="/artistas" className="hover:text-brand-700">Artistas</Link>
@@ -19,12 +25,21 @@ export default function Header() {
             Donar
           </Link>
         </nav>
-        <button className="md:hidden inline-flex items-center rounded-lg border px-3 py-2 text-sm" onClick={() => {
-          const m = document.getElementById('mobile-menu');
-          if (m) m.classList.toggle('hidden');
-        }}>Menú</button>
+
+        <button
+          className="md:hidden inline-flex items-center rounded-lg border px-3 py-2 text-sm"
+          onClick={() => setOpen((v) => !v)}
+          aria-expanded={open}
+          aria-controls="mobile-menu"
+        >
+          Menú
+        </button>
       </div>
-      <div id="mobile-menu" className="container pb-4 hidden md:hidden">
+
+      <div
+        id="mobile-menu"
+        className={`container pb-4 md:hidden ${open ? "" : "hidden"}`}
+      >
         <div className="mt-2 grid gap-2">
           <Link href="/programas" className="rounded-md px-3 py-2 hover:bg-gray-50">Programas</Link>
           <Link href="/artistas" className="rounded-md px-3 py-2 hover:bg-gray-50">Artistas</Link>
